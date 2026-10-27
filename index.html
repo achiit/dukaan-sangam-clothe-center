@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sangam Cloth Center – Style for Every Occasion</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf6ec;--bg2:#faeee3;--card:#fff;--ink:#2b1216;--muted:#6b5650;--wine:#5c0f23;--gold:#f5c04a;--line:#ecdcc8;--wa:#1c9a50;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b0c10;--bg2:#220f15;--card:#2a141b;--ink:#f6ead6;--muted:#c3ada1;--wine:#4a0c1c;--line:#47242d}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b0c10;--bg2:#220f15;--card:#2a141b;--ink:#f6ead6;--muted:#c3ada1;--wine:#4a0c1c;--line:#47242d}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Hind",system-ui,sans-serif}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;margin:0;line-height:1.15}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);font-style:italic;color:var(--wine)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--gold)}}
+:root[data-theme="dark"] h2{color:var(--gold)}
+nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;gap:18px;min-height:74px}
+.logo{display:flex;align-items:center;gap:12px;margin-right:auto}
+.seal{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle,#7a1a30,#3d0716);border:3px solid var(--gold);color:var(--gold);display:grid;place-items:center;font:italic 700 .95rem "Playfair Display",serif}
+.logo b{font:700 1.55rem/1 "Playfair Display",serif;color:var(--wine)}
+.logo small{display:block;font:italic 500 .8rem "Playfair Display",serif;color:var(--muted)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo b{color:var(--gold)}}
+:root[data-theme="dark"] .logo b{color:var(--gold)}
+.links{display:flex;gap:24px;font-weight:500}
+.links a{padding:6px 0;border-bottom:2px solid transparent}
+.links a:hover{border-color:var(--wine)}
+.ph{display:flex;align-items:center;gap:8px;font-weight:600}
+.ph i,.wai{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-style:normal;color:#fff}
+.ph i{background:var(--wine)}.wai{background:var(--wa)}
+@media(max-width:860px){.links{display:none}}
+@media(max-width:520px){.ph span{display:none}.logo b{font-size:1.25rem}}
+.hero{position:relative;color:#fff;padding:70px 0 80px;background:
+ linear-gradient(90deg,rgba(25,5,10,.92) 25%,rgba(25,5,10,.1)),
+ url(images/hero.jpg) right center/cover,
+ repeating-linear-gradient(90deg,#8b1530 0 38px,#c98a1a 38px 52px,#1f6f5c 52px 90px,#b02a6a 90px 128px,#2c3e8c 128px 160px),#3a0a16}
+.hero em{font:italic 700 2rem "Playfair Display",serif;color:var(--gold)}
+.hero h1{font-size:clamp(2.4rem,7vw,4.2rem);margin:4px 0 14px}
+.hero p{font:500 1.35rem/1.4 "Playfair Display",serif;max-width:30rem;margin:0 0 22px}
+.pill{display:inline-block;background:rgba(245,192,74,.18);border:1px solid var(--gold);color:var(--gold);padding:8px 18px;border-radius:999px;font-weight:500;margin-bottom:26px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600}
+.btn.gold{background:var(--gold);color:#3a0a16}
+.btn.wine{background:var(--wine);color:#fff}
+.trust{background:var(--bg2);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px 12px;padding-block:18px}
+.trust div{display:flex;align-items:center;gap:12px;font-size:.95rem;font-weight:500;line-height:1.3}
+.trust b{font-size:1.6rem;color:var(--wine)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .trust b{color:var(--gold)}}
+:root[data-theme="dark"] .trust b{color:var(--gold)}
+section{padding:56px 0}
+.about .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:34px;align-items:center}
+.fab{min-height:210px;border-radius:10px;background:
+ url(images/about.jpg) center/cover,
+ repeating-linear-gradient(0deg,#d4246b 0 22px,#f0a420 22px 30px,#7a1030 30px 52px,#1d8a6a 52px 74px,#e7b53a 74px 80px)}
+.about p{color:var(--muted);margin:12px 0 20px}
+.badge{text-align:center;font:700 5rem/1 "Playfair Display",serif;color:var(--wine)}
+.badge small{display:block;font:italic 500 1.4rem "Playfair Display",serif;color:#b8711a}
+.badge span{font:500 1rem Hind,sans-serif;color:var(--ink)}
+.coll{background:var(--bg2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:22px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-align:center}
+.item .img{height:120px}
+.item h3{font-size:1.05rem;margin:12px 6px 2px}
+.item p{margin:0 0 14px;font-size:.8rem;color:var(--muted)}
+.team{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+.people{display:flex;gap:26px;flex-wrap:wrap}
+.people div{text-align:center;font-size:.9rem}
+.people i{display:grid;place-items:center;width:84px;height:84px;margin:0 auto 6px;border-radius:50%;background:var(--wine);color:var(--gold);font:italic 700 1.6rem "Playfair Display",serif}
+.people b{display:block}
+footer{background:var(--wine);color:#fbeed2;padding:44px 0 22px}
+footer .wrap>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+footer h2{color:#fff;font-style:normal;margin-bottom:6px}
+footer h3{font:600 1rem Hind,sans-serif;color:var(--gold);margin-bottom:4px}
+footer p{margin:0}
+.fbtn{display:block;text-align:center;margin-bottom:10px;border:2px solid #fbeed2;padding:11px;border-radius:999px;font-weight:600}
+.fbtn.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.copy{margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:up .8s ease both}@keyframes up{from{opacity:0;transform:translateY(14px)}}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <a class="logo" href="#home"><span class="seal" style="background:url(images/logo.jpg) center/cover,radial-gradient(circle,#7a1a30,#3d0716)">Sangam</span><span><b>Sangam</b><small>Cloth Center · Style for Every Occasion</small></span></a>
+ <div class="links"><a href="#home">Home</a><a href="#about">About Us</a><a href="#collection">Our Collection</a><a href="#team">Our Team</a><a href="#contact">Contact Us</a></div>
+ <a class="ph" href="tel:+919555442808"><i>✆</i><span>9555442808</span></a>
+ <a class="wai" href="https://wa.me/919555442808" target="_blank" rel="noopener" aria-label="WhatsApp">✉</a>
+</div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+ <em>Welcome to</em>
+ <h1>Sangam Cloth Center</h1>
+ <p>Premium Sarees, Suits &amp; Ethnic Wear for Every Celebration</p>
+ <span class="pill">★ Serving Raebareli with Trust &amp; Quality for 15 Years</span><br>
+ <a class="btn gold" href="#collection">Explore Collection</a>
+</div></header>
+
+<div class="trust"><div class="wrap">
+ <div><b>✓</b>100% Original Products</div>
+ <div><b>✦</b>Latest Designs &amp; Trends</div>
+ <div><b>◆</b>Best Quality Cloth</div>
+ <div><b>★</b>Trusted by Customers</div>
+ <div><b>♥</b>Since 2010 (15+ Years)</div>
+</div></div>
+
+<section class="about" id="about"><div class="wrap">
+ <div class="fab" role="img" aria-label="Folded sarees"></div>
+ <div>
+  <h2>About Us</h2>
+  <p>Sangam Cloth Center is a well-known clothing store in Raebareli, serving customers with quality sarees, suits and ethnic wear for the last 15 years. We believe in traditional values, modern styles and customer satisfaction. Our goal is to make every customer feel special with our unique collection and reasonable prices.</p>
+  <a class="btn wine" href="#contact">Visit the shop</a>
+ </div>
+ <div class="badge">15+<small>Years</small><span>of Trust &amp; Quality</span></div>
+</div></section>
+
+<section class="coll" id="collection"><div class="wrap">
+ <h2>Our Collection</h2>
+ <p style="margin:4px 0 0;color:var(--muted)">Explore our wide range of traditional and modern wear</p>
+ <div class="grid">
+  <div class="item"><div class="img" style="background:url(images/sarees.jpg) center/cover,linear-gradient(135deg,#b3122e,#e8a317)"></div><h3>Sarees</h3><p>Silk · Banarasi · Print · Bridal</p></div>
+  <div class="item"><div class="img" style="background:url(images/suits.jpg) center/cover,linear-gradient(135deg,#7fb7a4,#e6d3a8)"></div><h3>Suits</h3><p>Comfort · Class · Everyday</p></div>
+  <div class="item"><div class="img" style="background:url(images/cotton.jpg) center/cover,repeating-linear-gradient(90deg,#e8a317 0 20px,#1d8a9a 20px 40px,#c2185b 40px 60px)"></div><h3>Cotton</h3><p>Soft · Breathable · Daily Wear</p></div>
+  <div class="item"><div class="img" style="background:url(images/party.jpg) center/cover,linear-gradient(135deg,#14264f,#b98a3a)"></div><h3>Party Wear</h3><p>Grace · Glamour · Occasions</p></div>
+  <div class="item"><div class="img" style="background:url(images/mens.jpg) center/cover,repeating-linear-gradient(45deg,#2c4a8c 0 14px,#1a2f5e 14px 28px)"></div><h3>Men's Wear</h3><p>Classic · Comfortable · Modern</p></div>
+  <div class="item"><div class="img" style="background:url(images/dress.jpg) center/cover,linear-gradient(135deg,#a3153a,#2f8f5b,#e0a21f)"></div><h3>Dress Materials</h3><p>Variety · Custom Stitching</p></div>
+ </div>
+</div></section>
+
+<section id="team"><div class="wrap team">
+ <div style="max-width:380px"><h2>Our Team</h2><p style="color:var(--muted)">Meet the people who make Sangam Cloth Center special. Our team helps you find the right design with a pleasant shopping experience.</p></div>
+ <div class="people">
+  <div><i>O</i><b>Owner</b>Founder</div>
+  <div><i>M</i><b>Manager</b>Store Manager</div>
+  <div><i>S</i><b>Sales</b>Sales Executive</div>
+  <div><i>C</i><b>Support</b>Customer Support</div>
+ </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+ <div>
+  <div><h2>Contact Us</h2><p>We are here to help you. Get in touch with us!</p></div>
+  <div><h3>Phone / WhatsApp</h3><p><a href="tel:+919555442808">9555442808</a></p></div>
+  <div><h3>Our Address</h3><p>Saree &amp; Suit, Banarasi, Cotton, Print, Bridal Suit<br>Hanumantpuram, Lucknow Road, Raebareli</p></div>
+  <div><h3>Timings</h3><p>9:30 AM – 9:30 PM<br>(7 Days a Week)</p></div>
+  <div>
+   <a class="fbtn wa" href="https://wa.me/919555442808?text=Hello%20Sangam%20Cloth%20Center" target="_blank" rel="noopener">Chat on WhatsApp</a>
+   <a class="fbtn" href="https://maps.app.goo.gl/npnopuyYEwzvkgt67" target="_blank" rel="noopener">Get Directions</a>
+  </div>
+ </div>
+ <div class="copy"><span>© 2026 Pallavi Soni. All Rights Reserved.</span><span>Follow us on Instagram · Facebook</span></div>
+</div></footer>
+</body>
+</html>
